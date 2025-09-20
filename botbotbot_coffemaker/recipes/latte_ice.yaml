@@ -1,0 +1,19 @@
+name: Iced Latte
+glass: cold_cup_16oz
+steps:
+  - primitive: GetCup
+    params:
+      size_oz: 16
+
+  - primitive: AddIce
+    params:
+      grams: 140
+
+  - primitive: PullShot
+    params:
+      size_ml: 36
+
+  - primitive: AddMilk
+    params:
+      milk_ml: 220
+      chilled: true

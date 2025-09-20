@@ -1,0 +1,19 @@
+name: Iced Americano
+glass: cold_cup_16oz
+steps:
+  - primitive: GetCup
+    params:
+      size_oz: 16
+
+  - primitive: AddIce
+    params:
+      grams: 140
+
+  - primitive: PullShot
+    params:
+      size_ml: 36
+
+  - primitive: AddWater
+    params:
+      volume_ml: 160
+      source: cold_water

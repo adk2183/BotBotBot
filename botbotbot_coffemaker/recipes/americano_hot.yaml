@@ -1,0 +1,15 @@
+name: Hot Americano
+glass: hot_cup_12oz
+steps:
+  - primitive: GetCup
+    params:
+      size_oz: 12
+
+  - primitive: PullShot
+    params:
+      size_ml: 36
+
+  - primitive: AddWater
+    params:
+      volume_ml: 180
+      source: hot_water

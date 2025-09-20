@@ -1,0 +1,23 @@
+name: Hot Latte
+glass: hot_cup_12oz
+steps:
+  - primitive: GetCup
+    params:
+      size_oz: 12
+
+  - primitive: PullShot
+    params:
+      size_ml: 36
+
+  - primitive: SteamMilk
+    params:
+      milk_ml: 180
+      temp_c: 60
+      foam: low
+
+  - primitive: PourMilk
+    params:
+      from: pitcher
+      to: cup
+      style: centered
+      target_ml: 180
